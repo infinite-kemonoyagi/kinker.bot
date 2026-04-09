@@ -1,0 +1,23 @@
+{
+  "name": "asistente.bot",
+  "version": "1.0.0",
+  "description": "El bot para el server del youtuber Kinker Aspher (Fanaticos de la cabra)",
+  "homepage": "https://github.com/infinite-kemonoyagi/kinker.bot#readme",
+  "bugs": {
+    "url": "https://github.com/infinite-kemonoyagi/kinker.bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinite-kemonoyagi/kinker.bot.git"
+  },
+  "license": "MIT",
+  "author": "Infinite Kemonoyagi",
+  "type": "commonjs",
+  "main": "source/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.2"
+  }
+}

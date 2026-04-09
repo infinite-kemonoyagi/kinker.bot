@@ -6,9 +6,14 @@ const { Client, Collection } = require("discord.js");
 const client = new Client({ intents: 53608447 });
 const { loadCommands } = require("./commands/commandHelper");
 
+require("./events/eventHelper").loadEvents();
+
 require("dotenv").config();
 
+let interaction;
+
 client.on("interactionCreate", async interaction => {
+  this.interaction = interaction;
   if (!interaction.isCommand()) return;
 
   const command = client.slashCommands.get(interaction.commandName);
